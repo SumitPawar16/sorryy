@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sorry 🥺</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- PAGE 1 -->
+<div class="screen active" id="s1">
+  <div class="face" onclick="go('s2')">
+    <img class="big" src="sorry1.png" alt="Sorry">
+  </div>
+  <div class="tap">(photo pe tap karo 💗)</div>
+</div>
+
+<!-- PAGE 2 -->
+<div class="screen" id="s2">
+  <div class="letter">
+    <h2>Meri jaan ke naam 💌</h2>
+    <p>Mujhe pata hai tum naraz ho, aur ho bhi sakti ho. Tumne reels bheji, aur maine reply nahi diya.</p>
+    <p>Yeh ek-do baar nahi, kai baar hua hai. Har baar tumhe lagta hoga ki main tumhari baat ko important nahi samajhta.</p>
+    <p>Sach yeh hai ki tum meri sabse important ho. Reel ke bahane tum mujhse baat karna chahti ho, aur main wahi miss kar deta hoon.</p>
+    <!-- APNE SHABD YAHAN LIKHO: koi real yaad, uski koi cheez jo tumhe pasand hai -->
+    <p>Main promise karta hoon ki ab se tumhari har reel dekhunga aur reply karunga, chahe chhota sa hi sahi.</p>
+    <p>Bas ek mauka aur de do. Aur agar abhi bhi gussa hai, toh neeche ek button hai... 😅</p>
+    <p>Hamesha tumhara,<br><b>Sumeet</b> ❤️</p>
+  </div>
+
+  <div class="stage">
+    <img id="pic" src="sorry2.png" alt="Sorry">
+    <span class="hammer" id="hammer">🔨</span>
+  </div>
+  <button id="hitBtn" onclick="hit()">Hit him 🔨</button>
+  <div id="msg"></div>
+  <button id="done" onclick="go('s3')">Maaf kar diya? 🥹</button>
+</div>
+
+<!-- PAGE 3 -->
+<div class="screen" id="s3">
+  <div class="sad"><img src="sorry1.png" alt="Sorry"></div>
+  <h1>Sorry, meri jaan 🥺❤️</h1>
+  <p>Ab se tumhari har baat ka reply milega. Promise. 🫶🧿</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
