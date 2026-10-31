@@ -1,5 +1,5 @@
 var count = 0;
-var lines = ["Aww 😭", "Aur maaro 😩", "Dard ho raha hai 🥲", "Sorry sorry sorry 🙏", "Ab toh maaf kar do 🥹"];
+var lines = ["ouchh 😭", "ajunn marrr😩", "Dard ho raha hai 🥲", "Sorry sorry sorry 🙏", "ataa maaf kara n 👉👈 🥹"];
 
 function go(id) {
   document.querySelectorAll('.screen').forEach(function (s) {
@@ -20,7 +20,7 @@ function hit() {
     void p.offsetWidth;
     p.classList.add('hit');
   }, 120);
-  document.getElementById('msg').textContent = lines[count % lines.length] + "  (hits: " + count + ")";
+  document.getElementById('msg').textContent = lines[(count - 1) % lines.length];
   if (count >= 3) {
     document.getElementById('done').style.display = 'inline-block';
   }
